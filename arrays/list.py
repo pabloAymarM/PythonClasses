@@ -33,3 +33,34 @@
         
 # print(f'Temos {totmai} maiores e {totmen} de idade.')
 
+animais = ['Daniel', 'Victor', 'João']
+print(type(animais))
+
+print('-'*50)
+
+for elementos in animais:
+    print(elementos)
+    
+#1)
+print('-'*50)
+animais[0] = 'Coelho'
+print(animais)
+
+#2)
+print('-'*50)
+animais.append('Hélio') #add a new element in list
+print(animais)
+
+#
+print('-'*50)
+animais.insert(1, 'Cristian')
+print(animais)
+
+#3)
+print('-'*50)
+animais.pop() #delete the last element
+
+#
+print('-'*50)
+animais.pop(0)
+print(animais)

@@ -1,0 +1,47 @@
+git config user.name //procurar o nome no git
+
+git config --global user.name "nome" //criar o nome do git
+
+clear
+
+git config --global user.email "aymar.cmp@hotmail.com"
+
+git config user.email 
+
+git init //criar repositório
+
+ls //mostrar repositórios
+
+ls -a //mostrar pastas ocultas
+
+git status //se ficar vermelho não está sendo rastreável
+
+git add . //transformar o arquivo rastreável
+
+git commit
+
+git commit -m "mensagem a cada atualização"
+
+:wq //sair do commit
+
+git log //atualização de quem fez o tabalho e a mensagem
+
+git log --oneline// atualização em somente uma linha
+
+git checkout _codigo_
+
+git checkout master //voltar ao ponto inicial
+
+git restore .// refazer qualquer ação
+
+git remote -v//verifica se o repositório tá vinculado ao criado no git
+
+git remote add origin _link_
+
+$ git push origin master//lança tudo do master para o repositório
+/////////////////////////////////////////////////////////
+1. não rastreável 2. rastreável e não salvo 3. finalizado
+
+U untracked - não rastreado pelo git
+A rastreável
+M modificado
