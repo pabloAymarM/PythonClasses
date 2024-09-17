@@ -64,3 +64,7 @@ animais.pop() #delete the last element
 print('-'*50)
 animais.pop(0)
 print(animais)
+
+#
+animais.remove('Victor')
+print(animais)
