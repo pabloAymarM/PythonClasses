@@ -1,21 +1,31 @@
-meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
-         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+meses = ['Janeiro', 
+         'Fevereiro', 
+         'Março', 
+         'Abril', 
+         'Maio', 
+         'Junho', 
+         'Julho', 
+         'Agosto', 
+         'Setembro', 
+         'Outubro', 
+         'Novembro', 
+         'Dezembro']
 
-temperaturas = []
+temp = []
 somaTemp = 0
 
 for numMes in range(12):
-    temp = float(input(f"Digite a temperatura média de {meses[numMes]}: "))
-    temperaturas.append(temp)
+    temp = float(input(f'Digite a temperatura média de {meses[numMes]}: '))
+    temp.append(temp)
 
 for cont in range(12):
-    somaTemp += temperaturas[cont]
+    somaTemp += temp[cont]
 
 mediaAno = somaTemp / 12
 
-print(f"\nA média anual de temperatura foi: {mediaAno:.2f}°C")
+print(f'\nA média anual de temperatura foi: {mediaAno:.2f}°C')
 
-print("\nMeses com temperaturas acima da média anual:")
+print('\nMeses com temperaturas acima da média anual:')
 for numMes in range(12):
-    if temperaturas[numMes] > mediaAno:
-        print(f"{meses[numMes]} - {temperaturas[numMes]:.2f}°C")
+    if temp[numMes] > mediaAno:
+        print(f"{meses[numMes]} - {temp[numMes]:.2f}°C")

@@ -18,4 +18,5 @@ for elemento in list1:
     list3.append(list1[numList] + list2[numList])
     numList += 1
 
+list3.pop()
 print(list3)
