@@ -39,6 +39,9 @@ git remote -v//verifica se o repositório tá vinculado ao criado no git
 git remote add origin _link_
 
 git push origin master//lança tudo do master para o repositório
+
+git push origin master --force
+
 /////////////////////////////////////////////////////////
 1. não rastreável 2. rastreável e não salvo 3. finalizado
 

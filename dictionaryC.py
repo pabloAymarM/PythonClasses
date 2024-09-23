@@ -33,3 +33,6 @@ print(dadosPessoais)
 #delete in dictionary
 dadosPessoais.pop('Endereço')
 print(dadosPessoais)
+
+del(dadosPessoais['Endereço'])
+print(dadosPessoais)
