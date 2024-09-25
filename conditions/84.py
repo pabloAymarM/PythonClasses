@@ -1,3 +1,4 @@
+#Bônus de salário
 sal = float(input('Informe o seu salário: '))
 anos = int(input('Há quantos anos você trabalha na empresa? '))
 

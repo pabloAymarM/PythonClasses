@@ -1,5 +1,6 @@
-import time
+#Crie um cronômetro
 
+import time
 
 totTime = int(input("Digite o número de segundos para o cronômetro: "))
 print("Cronômetro iniciado...")
