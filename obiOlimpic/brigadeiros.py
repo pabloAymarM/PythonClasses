@@ -37,8 +37,40 @@ for c in range(Nint):
             soma += intPos
         else:
             pos1 -= 1
-            intPos = int(l2[pos1])
-            soma += intPos
+
     c += 1
 
 print(soma)
+def calcular_brigadeiros(N, K, T, brigadeiros, posicoes):
+    max_brigadeiros = 0
+    for _ in range(T):
+        for i in range(K):
+            if posicoes[i] < N - 1 and brigadeiros[posicoes[i] + 1] > brigadeiros[posicoes[i]]:
+                posicoes[i] += 1
+        total_brigadeiros = sum(brigadeiros[pos] for pos in posicoes)
+        max_brigadeiros = max(max_brigadeiros, total_brigadeiros)
+    return max_brigadeiros
+
+def ler_entrada():
+    N, K, T = map(int, input().split())
+    brigadeiros = list(map(int, input().split()))
+    posicoes = list(map(int, input().split()))
+    return N, K, T, brigadeiros, posicoes
+
+def main():
+    N, K, T, brigadeiros, posicoes = ler_entrada()
+    if N < 1 or N > 50:
+        return
+    if K < 1 or K > 3:
+        return
+    if T < 1 or T > 1000:
+        return
+    if len(brigadeiros) != N:
+        return
+    if len(posicoes) != K:
+        return
+    resultados = calcular_brigadeiros(N, K, T, brigadeiros, posicoes)
+    print(resultados)
+
+if __name__ == "__main__":
+    main()
